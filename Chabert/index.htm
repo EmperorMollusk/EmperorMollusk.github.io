@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Hallmark Bingo Maker</title>
+        <link rel="stylesheet" href="bingo.css" />
+        <script src="jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="values.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+            $("#BingoHolder").ready(function(){
+                
+                var tableCount = 15;
+
+                for(i = 0; i < tableCount; i++)
+                {
+                    var string = makeTableString();
+                    $("#BingoHolder").append(string);
+                }
+                
+
+
+            });
+        });
+        
+        
+        
+        function makeTableString()
+        {
+            var textChooser = randomNoRepeats(bingoValues);
+
+            var displayString = '<table class="BingoTable"><thead><td>B</td><td>I</td><td>N</td><td>G</td><td>O</td></thead>';
+            var rowNumber = 0;
+            while(rowNumber < 5)
+                {       
+                    displayString += "<tr>";            
+                    var colNumber = 0;
+                    while(colNumber < 5)
+                    {
+                        if(colNumber == 2 && rowNumber == 2)
+                        {
+                            displayString += "<td class='FreeSpace'>Free Space</td>";
+                        }
+                        else
+                        {
+                            displayString += "<td>" + textChooser() + "</td>";
+                        }
+                        colNumber++;
+                    }
+                    
+                    
+                    displayString += "</tr>";
+                    rowNumber++;
+                }
+            displayString += "</table>";
+            return displayString;
+        }
+
+
+        function randomNoRepeats(array) {
+  var copy = array.slice(0);
+  return function() {
+    if (copy.length < 1) { copy = array.slice(0); }
+    var index = Math.floor(Math.random() * copy.length);
+    var item = copy[index];
+    copy.splice(index, 1);
+    return item;
+  };
+
+}
+        
+        </script>
+    </head>
+<body>
+    <div id="BingoHolder"></div>
+
+
+
+</body>
+
+
+</html>
