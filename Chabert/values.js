@@ -40,5 +40,4 @@ var bingoValues = [
 , "Spent All the Money on The Actors"
 , "Sleigh Ride with Animal Cruelty"
 , "Town Square Make Out"
-, "Downton Abbey Staff Christmas"
-, "\'Jesus? Is That The Guy at Nanay\'s House?\' "]
+, "Downton Abbey Staff Christmas"]
