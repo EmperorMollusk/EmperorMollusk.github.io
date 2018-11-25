@@ -11,6 +11,7 @@ var bingoValues = [
 , "Job in Danger"
 , "Save the Farm!"
 , "Sassy BFF"
+, "DJ, from the Full House"
 , "...Then, Santa Shows Up"
 , "Childhood Dreams Come True"
 , "Falling for the Enemy"
@@ -30,4 +31,14 @@ var bingoValues = [
 , "Bitchy GF or Asshole BF"
 , "Exotic Vacation Cancelled"
 , "Charity Work"
-, "Blue collar/White Collar Star Crossed Love"]
+, "Blue collar/White Collar Star Crossed Love"
+, "D-I-V-O-R-C-E"
+, "Carcinogenic Snow"
+, "Potemkin Village"
+, "It's a Benetton Christmas"
+, "They Paid the Rights!"
+, "Spent All the Money on The Actors"
+, "Sleigh Ride with Animal Cruelty"
+, "Town Square Make Out"
+, "Downton Abbey Staff Christmas"
+, "\'Jesus? Is That The Guy at Nanay\'s House?\' "]
