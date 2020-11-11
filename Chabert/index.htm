@@ -10,7 +10,7 @@
 
             $("#BingoHolder").ready(function(){
                 
-                var tableCount = 1;
+                var tableCount = 5;
 
                 for(i = 0; i < tableCount; i++)
                 {
@@ -20,6 +20,11 @@
 
                 var descriptions = makeDescriptionList();
                 $("#DescriptionHolder").append(descriptions);
+
+                $("#DescriptionToggle").click(function()
+                {
+                    $("#DescriptionHolder").toggle();
+                })
             });
         });
         
@@ -33,8 +38,6 @@
                     if(nameX > nameY){ return 1;}
                     return 0;
                 })
-
-
 
             sortedBingoValues.forEach(element => {
                 displayString += "<dt>" + element.n + "</dt>";
@@ -66,9 +69,7 @@
                             displayString += "<td>" + textChooser().n + "</td>";
                         }
                         colNumber++;
-                    }
-                    
-                    
+                    }    
                     displayString += "</tr>";
                     rowNumber++;
                 }
@@ -93,6 +94,8 @@
     </head>
 <body>
     <div id="BingoHolder"></div>
+
+    <div id="ToggleHolder" class="noprint"><button id="DescriptionToggle">Show/Hide Descriptions</button></div>
 
     <div id="DescriptionHolder"></div>
 
