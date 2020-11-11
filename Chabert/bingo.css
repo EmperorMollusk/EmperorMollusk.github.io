@@ -31,3 +31,48 @@ td.freespace
     font-style: oblique;
     text-transform: uppercase;
 }
+
+div#DescriptionHolder
+{
+    width: 600px;
+    margin: 10px auto;
+}
+
+dl{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .8em; 
+}
+
+dt{
+    font-weight: bold;
+}
+
+div#ToggleHolder
+{
+    text-align: center;
+}
+
+button
+{
+    background-color: #4CAF50; /* Green */
+    border:2px solid #4CAF50; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: white; /* Green */
+    color: #4CAF50;
+    border:2px solid #4CAF50; 
+  }
+
+@media print{
+    .noprint {
+        visibility: hidden;
+    }
+}
