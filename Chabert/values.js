@@ -2,15 +2,15 @@ let bingoValues = [
 {n: "Lacey Chabert", d: "An appearance of the Christmas Queen"}
 , {n:"Winnie Cooper", d: "Remember \"The Wonder Years\"? Well so does she."}
 , {n:"Red-Haired Chick", d: "Our star is that Red-Haired Chick, not that one the other one."}
-, {n:"Single Parent", d: "All the cute of a kid with none of the romantic entaglement"}
-, {n:"Conveniently Dead Spouse", d: "Family tragedy paving the way to Yultide love"}
+, {n:"Single Parent", d: "All the cute of a kid with none of the romantic entanglement."}
+, {n:"Conveniently Dead Spouse", d: "Family tragedy paving the way to Yuletide love."}
 , {n:"Exile to Small Town America", d:"I'm a big city girl how could I ever learn to love your small-town ways?"}
 , {n:"Name Brand Actor", d:"And then, right in the middle of this mess, we see Ed Asner."}
 , {n:"You\'ve been \"It\'s a Wonderful Life\"d\'", d: "You learn a lesson about that path not taken and Clarence gets his wings."}
 , {n:"Heroine Owns the Business", d:"She's just trying to keep that bookstore open!"}
 , {n:"Job in Danger", d:"I want pictures of Mommy kissing Santa Claus on my desk by five or you're fired, Parker!"}
 , {n:"Save the Farm!", d:"The bank'll foreclose if we don't grow the best gingerbread crop the valley has ever seen!"}
-, {n:"Sassy BFF", d:"We all know what you need, girrrrrrrrl!"}
+, {n:"Sassy BFF", d:"We all know what YOU need, girrrrrrrrl!"}
 , {n:"DJ, from the Full House", d:"What would Uncle Jesse think?"}
 , {n:"...Then, Santa Shows Up", d:"I wonder if that old man with the beard and the love of cookies has any insight."}
 , {n:"Childhood Dreams Come True", d:"Ever since I was a little girl I always to run with the bulls!"}
@@ -46,7 +46,7 @@ let bingoValues = [
 , {n:"Gay Best Friend!!", d:"He's got quips aplenty and looks good doing it."}
 , {n:"Light the Menorah Not the Tree!", d:"You know there are other holidays this time of year?"}
 , {n:"Central Couple of Color", d:"Christmas romance is for everyone!"}
-, {n:"Can You Point to It On a Map?", d:"He's the Crown Prince of The Grand Dutchy of Madeupastan!"}
+, {n:"Can You Point to It On a Map?", d:"He's the Crown Prince of The Grand Duchy of Madeupastan!"}
 , {n:"AirBandB Based Mishap", d:"We both can't have reservations at this chalet!"}
 , {n:"Knew Your Father, I Did", d:"Remember your Dad? So do I and let me tell you about him."}
 , {n:"Damn This Weather!", d:"No one is getting off the mountain and back to the big city in this snow!"}

@@ -16,16 +16,35 @@
                 {
                     var string = makeTableString();
                     $("#BingoHolder").append(string);
-
-                    var descriptions = makeDescriptionList();
-                    $("#BingoHolder").append(descriptions);
                 }
-                
 
-
+                var descriptions = makeDescriptionList();
+                $("#DescriptionHolder").append(descriptions);
             });
         });
         
+        function makeDescriptionList()
+        {
+            var displayString = "<dl>";
+                var sortedBingoValues = bingoValues.sort(function(x, y) {
+                    var nameX = x.n.toUpperCase();
+                    var nameY = y.n.toUpperCase();
+                    if(nameX < nameY){ return -1;}
+                    if(nameX > nameY){ return 1;}
+                    return 0;
+                })
+
+
+
+            sortedBingoValues.forEach(element => {
+                displayString += "<dt>" + element.n + "</dt>";
+                displayString += "<dd>" + element.d + "</dd>";
+            });
+
+            displayString += "</dl>";
+            return displayString;
+        }
+
         function makeTableString()
         {
             var textChooser = randomNoRepeats(bingoValues);
@@ -74,6 +93,8 @@
     </head>
 <body>
     <div id="BingoHolder"></div>
+
+    <div id="DescriptionHolder"></div>
 
 
 
